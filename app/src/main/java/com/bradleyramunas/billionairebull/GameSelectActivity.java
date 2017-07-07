@@ -1,5 +1,6 @@
 package com.bradleyramunas.billionairebull;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -13,6 +14,7 @@ public class GameSelectActivity extends AppCompatActivity {
     }
 
     public void onCreateNewGameSelect(View view){
-
+        Intent launchGameSelectActivityIntent = new Intent(this, GameCreateActivity.class);
+        startActivityForResult(launchGameSelectActivityIntent, 1);
     }
 }
